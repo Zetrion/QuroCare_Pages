@@ -6,3 +6,5 @@ export 'widgets/price_breakdown_widget.dart';
 export 'widgets/coupon_codes_widget.dart';
 export 'widgets/user_agreement_widget.dart';
 export 'widgets/bottom_confirm_bar.dart';
+export 'views/home_booking_page.dart';
+export 'views/add_patient_sheet.dart';
