@@ -78,7 +78,7 @@ class SlotChipWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: AppColor.primary.withOpacity(0.08),
+        color: AppColor.background,
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: AppColor.primary),
       ),
@@ -87,14 +87,16 @@ class SlotChipWidget extends StatelessWidget {
           Text(
             'Slot : ',
             style: AppFonts.bodyRegular.copyWith(
-              fontSize: 12,
-              color: AppColor.textDark,
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: AppColor.primary,
             ),
           ),
           Text(
             slotTime,
             style: AppFonts.bodyBold.copyWith(
-              fontSize: 12,
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
               color: AppColor.primary,
             ),
           ),

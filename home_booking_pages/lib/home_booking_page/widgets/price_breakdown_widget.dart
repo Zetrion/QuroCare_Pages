@@ -21,38 +21,82 @@ class PriceBreakdownWidget extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          _row('Booking fee', '1599'),
+
+         
+          _row(
+            'Booking fee',
+            '1599',
+            tooltipMessage:
+                'Includes consultation charges, convenience fee and platform fee.',
+          ),
           const SizedBox(height: 6),
-          _row('Add-ons', '599'),
+
+          
+          _row(
+            'Add-ons',
+            '599',
+            tooltipMessage:
+                'Additional services or items selected during booking.',
+          ),
+
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 12),
             child: Divider(height: 1),
           ),
-          _row('Total Payable', '2198', isBold: true),
+
+          
+          _row(
+            'Total Payable',
+            '2198',
+            isBold: true,
+            tooltipMessage: 'Final amount payable at the clinic.',
+          ),
         ],
       ),
     );
   }
 
-  Widget _row(String label, String value, {bool isBold = false}) {
+  Widget _row(
+    String label,
+    String value, {
+    bool isBold = false,
+    String? tooltipMessage,
+  }) {
+    final textStyle = (isBold ? AppFonts.bodyBold : AppFonts.bodyRegular)
+        .copyWith(fontSize: 14, color: AppColor.textDark);
+
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          child: Text(
-            label,
-            style: (isBold ? AppFonts.bodyBold : AppFonts.bodyRegular).copyWith(
-              fontSize: 14,
-              color: AppColor.textDark,
-            ),
-          ),
+        
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(label, style: textStyle),
+            if (tooltipMessage != null) ...[
+              const SizedBox(width: 4),
+              Tooltip(
+                message: tooltipMessage,
+                triggerMode: TooltipTriggerMode.tap, 
+                waitDuration: const Duration(milliseconds: 300),
+                showDuration: const Duration(seconds: 3), 
+                decoration: BoxDecoration(
+                  color: Colors.black87,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                textStyle: const TextStyle(color: Colors.white, fontSize: 12),
+                child: Icon(
+                  Icons.info_outline_rounded,
+                  size: 16,
+                  color: AppColor.textLight,
+                ),
+              ),
+            ],
+          ],
         ),
-        Text(
-          value,
-          style: (isBold ? AppFonts.bodyBold : AppFonts.bodyRegular).copyWith(
-            fontSize: 14,
-            color: AppColor.textDark,
-          ),
-        ),
+
+        
+        Text(value, style: textStyle),
       ],
     );
   }

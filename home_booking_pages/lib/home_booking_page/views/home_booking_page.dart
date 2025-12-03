@@ -78,22 +78,26 @@ class _ReviewBookingViewState extends State<ReviewBookingView> {
                     setState(() => isAgreementChecked = v);
                   },
                 ),
+                const SizedBox(height: 30), // extra space at bottom
               ],
             ),
           ),
-          /**Align(
+          Align(
             alignment: Alignment.bottomCenter,
             child: SafeArea(
-              minimum: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-              child: BottomConfirmBar(
-                amountText: '₹ 90/-',
-                label: 'To pay at the clinic',
-                buttonText: 'Confirm',
-                isEnabled: isAgreementChecked,
-                onPressed: isAgreementChecked ? () {} : null,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                child: BottomConfirmBar(
+                  amountText: '₹ 90/-',
+                  label: 'To pay at the clinic',
+                  buttonText: 'Confirm',
+                  isEnabled: isAgreementChecked,
+                  onPressed: isAgreementChecked ? () {} : null,
+                ),
               ),
             ),
-          ),*/
+          )
+
         ],
       ),
     );

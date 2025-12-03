@@ -16,7 +16,7 @@ class CouponCodesWidget extends StatelessWidget {
           Text(
             'Coupon Codes',
             style: AppFonts.bodyBold.copyWith(
-              fontSize: 15,
+              fontSize: 20,
               color: AppColor.textDark,
             ),
           ),
