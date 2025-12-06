@@ -167,7 +167,7 @@ class _AddPatientSheetState extends State<AddPatientSheet> {
   Widget _label(String text) {
     return Text(
       text,
-      style: AppFonts.bodyBold.copyWith(fontSize: 14, color: AppColor.textDark),
+      style: AppFonts.bodyBold.copyWith(fontSize: 18, color: AppColor.textDark),
     );
   }
 
@@ -307,7 +307,7 @@ class _AddPatientSheetState extends State<AddPatientSheet> {
                 child: Text(
                   labels[i],
                   style: AppFonts.bodyBold.copyWith(
-                    fontSize: 13,
+                    fontSize: 15,
                     color: _selectedGenderIndex == i
                         ? AppColor.primary
                         : AppColor.textDark,
