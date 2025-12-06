@@ -1,5 +1,5 @@
-export 'widgets/review_header.dart';
-export 'widgets/booking_for_widget.dart';
-export 'widgets/bottom_confirm_bar.dart';
-export 'views/home_booking_page.dart';
-export 'views/add_patient_sheet.dart';
+export 'widgets/add_member_sheet.dart';
+export 'views/review_booking_page.dart';
+export 'widgets/clinic_card.dart';
+export 'widgets/confirm_bar.dart';
+export 'widgets/patient_card.dart';
