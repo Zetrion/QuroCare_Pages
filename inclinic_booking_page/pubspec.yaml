@@ -61,6 +61,7 @@ flutter:
   assets:
     - assets/stopwatch.png
     - assets/express.png
+    - assets/inclinic-img.png
    
 
   # An image asset can refer to one or more resolution-specific "variants", see

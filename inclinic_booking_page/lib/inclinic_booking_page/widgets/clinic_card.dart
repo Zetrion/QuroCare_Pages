@@ -61,7 +61,7 @@ class ClinicCard extends StatelessWidget {
                   color: Colors.white24,
                   borderRadius: BorderRadius.circular(8),
                   image: const DecorationImage(
-                    image: AssetImage('assets/clinic_placeholder.jpg'),
+                    image: AssetImage('assets/inclinic-img.png'),
                     fit: BoxFit.cover,
                   ),
                 ),

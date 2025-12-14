@@ -13,13 +13,25 @@ class AppFonts {
     fontSize: 14,
     fontWeight: FontWeight.w400,
   );
-  static TextStyle bodyBold = const TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.w600,
-  );
+  
   static TextStyle caption = const TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: Colors.grey,
+  );
+
+   static TextStyle bodyRegular = const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle bodyMedium = const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle bodyBold = const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
   );
 }

@@ -47,7 +47,7 @@ class _ReviewBookingPageState extends State<ReviewBookingPage> {
                           ),
                           child: const Icon(
                             Icons.arrow_back,
-                            color: AppColor.primary,
+                            color: AppColor.primaryDark,
                           ),
                         ),
                       ),
@@ -120,8 +120,8 @@ class _ReviewBookingPageState extends State<ReviewBookingPage> {
                         SizedBox(
                           width: double.infinity,
                           child: ElevatedButton.icon(
-                            icon: const Icon(Icons.add_circle_outline),
-                            label: const Text('Add new Member'),
+                            icon: const Icon(Icons.add_circle_outline,color: Colors.white,),
+                            label: const Text('Add new Member',style: TextStyle(color: Colors.white),),
                             style: ElevatedButton.styleFrom(
                               backgroundColor: AppColor.primary,
                               padding: const EdgeInsets.symmetric(vertical: 14),
@@ -237,17 +237,19 @@ class _ReviewBookingPageState extends State<ReviewBookingPage> {
             ),
 
             // Confirm bar floating near bottom
-            /*Align(
+            Align(
               alignment: Alignment.bottomCenter,
-              child: ConfirmBar(
-                amountText: '₹ 90/-',
-                onConfirm: () {
-                  ScaffoldMessenger.of(
-                    context,
-                  ).showSnackBar(const SnackBar(content: Text('Confirmed')));
-                },
+              child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+                  child: BottomConfirmBar(
+                    amountText: '₹ 90/-',
+                    label: 'To pay at the clinic',
+                    buttonText: 'Confirm',
+                  ),
+                ),
               ),
-            ),*/
+            )
           ],
         ),
       ),
@@ -270,3 +272,4 @@ class _ReviewBookingPageState extends State<ReviewBookingPage> {
     );
   }
 }
+
