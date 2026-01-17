@@ -8,3 +8,6 @@ export 'widgets/user_agreement_widget.dart';
 export 'widgets/bottom_confirm_bar.dart';
 export 'views/home_booking_page.dart';
 export 'views/add_patient_sheet.dart';
+export 'widgets/add_extra_care/add_more_care_card.dart';
+export 'widgets/add_extra_care/care_widget.dart';
+export 'widgets/add_extra_care/add_button.dart';

@@ -60,13 +60,15 @@ class _ReviewBookingViewState extends State<ReviewBookingView> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const ReviewHeader(), // address card
+                const ReviewHeader(), 
                 const SizedBox(height: 16),
                 const HomeDoctorCard(),
                 const SizedBox(height: 16),
                 const BookingForWidget(),
                 const SizedBox(height: 16),
                 const MorePatientDetailsWidget(),
+                const SizedBox(height: 16),
+                AddMoreCareCard(),
                 const SizedBox(height: 16),
                 const PriceBreakdownWidget(),
                 const SizedBox(height: 16),
