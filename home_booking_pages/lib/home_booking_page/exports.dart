@@ -1,6 +1,6 @@
 export 'widgets/review_header.dart';
 export 'widgets/home_doctor_card.dart';
-export 'widgets/booking_for_widget.dart';
+export 'widgets/patient/booking_for_widget.dart';
 export 'widgets/more_patient_details_widget.dart';
 export 'widgets/price_breakdown_widget.dart';
 export 'widgets/coupon_codes_widget.dart';
@@ -11,3 +11,4 @@ export 'views/add_patient_sheet.dart';
 export 'widgets/add_extra_care/add_more_care_card.dart';
 export 'widgets/add_extra_care/care_widget.dart';
 export 'widgets/add_extra_care/add_button.dart';
+export 'widgets/patient/patient_switch_sheet.dart';
