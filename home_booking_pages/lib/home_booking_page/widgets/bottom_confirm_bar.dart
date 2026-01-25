@@ -52,12 +52,12 @@ class BottomConfirmBar extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Flexible(
-                        child: FittedBox(
-                          fit: BoxFit.contain,
-                          child: Image.asset('assets/stopwatch.png', width: 30),
-                        ),
-                      ),
+                      // Flexible(
+                      //   child: FittedBox(
+                      //     fit: BoxFit.contain,
+                      //     child: Image.asset('assets/stopwatch.png', width: 30),
+                      //   ),
+                      // ),
                       const SizedBox(width: 6),
                       /**Flexible(
                         child: FittedBox(
@@ -77,7 +77,7 @@ class BottomConfirmBar extends StatelessWidget {
                           child: Opacity(
                             opacity: 0.8, // similar “soft” feel as the asset
                             child: Text(
-                              'EXPRESS',
+                              '',
                               style: AppFonts.bodyBold.copyWith(
                                 fontSize: 28, // base size, FittedBox will scale
                                 fontWeight: FontWeight.w900, // extra bold
