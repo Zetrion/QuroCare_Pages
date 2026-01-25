@@ -253,7 +253,7 @@ class _AddPatientSheetState extends State<AddPatientSheet> {
           const SizedBox(width: 12),
           Expanded(
             child: Text(
-              'Please ensure the details match the government ID.',
+              'This patient will be added under your family and linked to your Phone number.For now, all booking updates and calls will be to your number.If they wish to manage their own account later You can change their phonelater from your Account settings.',
               style: TextStyle(fontSize: 12, color: Colors.blue.shade900),
             ),
           ),
