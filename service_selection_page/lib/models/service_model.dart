@@ -17,25 +17,25 @@ final List<ServiceModel> mockServices = [
   ServiceModel(
     title: 'Home Doctor',
     subtitle: 'Consultation',
-    imagePath: 'assets/doctor.png', // Replace with actual asset paths
+    imagePath: 'assets/home_doctor_consultation.png', 
     detailsImage: 'assets/qurocare_van.png',
   ),
   ServiceModel(
     title: 'Home Nurse',
     subtitle: 'Service',
-    imagePath: 'assets/nurse.png',
+    imagePath: 'assets/home_nurse_service.png',
     detailsImage: 'assets/qurocare_van.png',
   ),
   ServiceModel(
     title: 'Home Sample',
     subtitle: 'Collection',
-    imagePath: 'assets/sample.png',
+    imagePath: 'assets/home_sample_collection.png',
     detailsImage: 'assets/qurocare_van.png',
   ),
   ServiceModel(
     title: 'Home Physiotherapy',
     subtitle: 'Collection',
-    imagePath: 'assets/physiotherapy.png',
+    imagePath: 'assets/physiotheraphy.png',
     detailsImage: 'assets/qurocare_van.png',
   ),
 ];

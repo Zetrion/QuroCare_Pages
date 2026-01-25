@@ -57,13 +57,24 @@ class ServiceCard extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    // A simple colored container to represent the image
-                    Container(
-                      width: 80, 
-                      height: 50, 
-                      color: Colors.grey[300], 
-                      child: const Center(child: Text('Image', style: TextStyle(fontSize: 10))),
+                    Expanded(
+                    child: Image.asset(
+                      service.imagePath,
+                      // Ensure the image scales nicely within the available space
+                      fit: BoxFit.contain, 
+                      alignment: Alignment.bottomLeft,
+                      // You may need to constrain height if images are too tall
+                      height: 80, 
+                      errorBuilder: (context, error, stackTrace) => Container(
+                        height: 80,
+                        alignment: Alignment.centerLeft,
+                        child: const Text(
+                          'Image Placeholder',
+                          style: TextStyle(fontSize: 10),
+                        ),
+                      ),
                     ),
+                  ),
                     const SizedBox(width: 8),
                     // Purple Arrow Button
                     Container(

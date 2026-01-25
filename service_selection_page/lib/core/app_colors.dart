@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class AppColors {
   // Primary colors from the design
   static const Color primaryDark = Color(0xFF282828); // For background/App Bar
-  static const Color primaryPurple = Color(0xFF6C63FF); // For the arrow icon
+  static const Color primaryPurple = Color(0xFF23138E); // For the arrow icon
 
   // Card colors
   static const Color cardBackgroundLight = Color(0xFFF7F7F7);
